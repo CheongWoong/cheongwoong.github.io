@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Impact of Co-occurrence on Factual Knowledge of Large Language Models
+description:
+img: assets/img/publication_preview/impact_of_cooccurrence.jpg
 importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
+category: fun
+related_publications: kang2023impact
 ---
 
 Every project has a beautiful feature showcase page.
