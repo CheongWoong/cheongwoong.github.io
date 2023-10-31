@@ -2,7 +2,7 @@
 layout: page
 title: Impact of Co-occurrence on Factual Knowledge of Large Language Models
 description:
-img: /assets/img/publication_preview/impact_of_cooccurrence.jpg
+img: "assets/img/publication_preview/impact_of_cooccurrence.jpg"
 importance: 1
 category: fun
 related_publications: kang2023impact
