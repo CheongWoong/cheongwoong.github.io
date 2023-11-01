@@ -36,7 +36,7 @@ Large language models (LLMs) often make factually incorrect responses despite th
 ## Factual Knowledge Probing
 **The LAMA Probe**
 
-We adopt the LAMA-TREx dataset <d-cite key="elsahar2018t,petroni2019language"></d-cite>, which consists of 41 relations, to probe factual knowledge of LLMs. Facts are represented as subject-relation-object triples (e.g. \'Canada\'-\'capital\'-\'Ottawa\'). Each fact is converted to a natural language form based on a pre-defined set of templates for relations (e.g. "The capital of Canada is Ottawa."). Then, it is converted to a Cloze statement by masking an object (e.g. "The capital of Canada is \[MASK\]"). To query unidirectional LMs, we use a sentence truncated right before the mask token (e.g. "The capital of Canada is").
+We adopt the LAMA-TREx dataset <d-cite key="elsahar2018t,petroni2019language"></d-cite>, which consists of 41 relations, to probe factual knowledge of LLMs. Facts are represented as subject-relation-object triples (e.g. 'Canada'-'capital'-'Ottawa'). Each fact is converted to a natural language form based on a pre-defined set of templates for relations (e.g. "The capital of Canada is Ottawa."). Then, it is converted to a Cloze statement by masking an object (e.g. "The capital of Canada is \[MASK\]"). To query unidirectional LMs, we use a sentence truncated right before the mask token (e.g. "The capital of Canada is").
 
 **Metrics**
 
