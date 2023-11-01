@@ -27,7 +27,7 @@ date: 2023-10-31
     </div>
 </div>
 <div class="caption_left">
-    This figure shows an overall framework of our correlation analysis between co-occurrence counts and factual knowledge of LLMs. We assume that if the target model heavily relies on subject-object co-occurrence, it is more likely to recall the most co-occurring word without accurate semantic understanding. For instance, in this hypothetical example, the model fails to answer the question about the capital of Canada by generating the most frequently co-occurring word `Toronto', while the correct answer is `Ottawa'. This indicates that relying heavily on co-occurrence statistics may have potential errors.
+    This figure shows an overall framework of our correlation analysis between co-occurrence counts and factual knowledge of LLMs. We assume that if the target model heavily relies on subject-object co-occurrence, it is more likely to recall the most co-occurring word without accurate semantic understanding. For instance, in this hypothetical example, the model fails to answer the question about the capital of Canada by generating the most frequently co-occurring word 'Toronto', while the correct answer is 'Ottawa'. This indicates that relying heavily on co-occurrence statistics may have potential errors.
 </div>
 
 ## Abstract
@@ -36,7 +36,7 @@ Large language models (LLMs) often make factually incorrect responses despite th
 ## Factual Knowledge Probing
 **The LAMA Probe**
 
-We adopt the LAMA-TREx dataset <d-cite key="elsahar2018t,petroni2019language"></d-cite>, which consists of 41 relations, to probe factual knowledge of LLMs. Facts are represented as subject-relation-object triples (e.g. `Canada'-`capital'-`Ottawa'). Each fact is converted to a natural language form based on a pre-defined set of templates for relations (e.g. "The capital of Canada is Ottawa."). Then, it is converted to a Cloze statement by masking an object (e.g. "The capital of Canada is \[MASK\]"). To query unidirectional LMs, we use a sentence truncated right before the mask token (e.g. "The capital of Canada is").
+We adopt the LAMA-TREx dataset <d-cite key="elsahar2018t,petroni2019language"></d-cite>, which consists of 41 relations, to probe factual knowledge of LLMs. Facts are represented as subject-relation-object triples (e.g. \'Canada\'-\'capital\'-\'Ottawa\'). Each fact is converted to a natural language form based on a pre-defined set of templates for relations (e.g. "The capital of Canada is Ottawa."). Then, it is converted to a Cloze statement by masking an object (e.g. "The capital of Canada is \[MASK\]"). To query unidirectional LMs, we use a sentence truncated right before the mask token (e.g. "The capital of Canada is").
 
 **Metrics**
 
