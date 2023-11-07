@@ -85,7 +85,7 @@ We consider the **co-occurrence statistics of the pre-training dataset** of targ
 To analyze the correlation between factual knowledge of LLMs and co-occurrence statistics, we **plot hits@1 of the target LLMs against the conditional probability** of the gold object given a subject. Here, we use the co-occurrence statistics of the pre-training corpora to compute conditional probabilities. We divide the samples into multiple frequency (conditional probability) bins and report the average hits@1 for each bin.
 
 ## Experimental Setup
-We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> with four different model sizes: GPT-Neo 125M, GPT-Neo 1.3B, GPT-Neo 2.7B, and GPT-J 6B <d-cite key="gpt-neo,gpt-j"></d-cite>, which are publicly available on Huggingface's transformers <d-cite key="wolf-etal-2020transformers"></d-cite>. These models are pre-trained on the Pile <d-cite key="gao2020pile"></d-cite>, which is a publicly available dataset that consists of 800GB of high-quality texts from 22 different sources.
+We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> with four different model sizes: **GPT-Neo 125M, GPT-Neo 1.3B, GPT-Neo 2.7B, and GPT-J 6B** <d-cite key="gpt-neo,gpt-j"></d-cite>, which are publicly available on Huggingface's transformers <d-cite key="wolf-etal-2020transformers"></d-cite>. These models are pre-trained on **the Pile** <d-cite key="gao2020pile"></d-cite>, which is a publicly available dataset that consists of 800GB of high-quality texts from 22 different sources.
 
 ## Results
 **Factual Knowledge Probing**
@@ -99,7 +99,7 @@ We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> 
     </div>
 </div>
 <div class="caption_left">
-    <b>Effects of model sizes and restricted candidate sets:</b> We plot micro-average hits@1 on the test set. (left) In the zero-shot setting, we observe that hits@1 is higher as the model is larger and as the output vocabulary is restricted to a smaller set. (right) In the finetuned setting, we observe that the effect of model sizes and restricted candidate sets is marginal. <b>Effects of finetuning:</b> (left->right) We observe that finetuning boosts the overall performance.
+    <b>Effects of model sizes and restricted candidate sets:</b> We plot micro-average hits@1 on the test set. <b>(left)</b> In the zero-shot setting, we observe that <b>hits@1 is higher as the model is larger and as the output vocabulary is restricted to a smaller set</b>. <b>(right)</b> In the finetuned setting, we observe that the effect of model sizes and restricted candidate sets is marginal. <b>Effects of finetuning:</b> <b>(left->right)</b> We observe that <b>finetuning boosts the overall performance</b>.
 </div>
 
 **Impact of Co-occurrence**
@@ -113,7 +113,7 @@ We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> 
     </div>
 </div>
 <div class="caption_left">
-    <b>The correlation between co-occurrence statistics and factual knowledge probing accuracy:</b> We plot hits@1 against $P_{pretrain}(obj|subj)$, the conditional probability of the gold object given a subject, on the test set in the <i>remove stopwords</i> setting. In both (left) zero-shot and (right) finetuned settings, we observe a strong correlation: hits@1 is lower as the co-occurrence count is lower. As a result, LLMs struggle to recall rare facts. We observe that such correlation remains despite scaling up model sizes or finetuning.
+    <b>The correlation between co-occurrence statistics and factual knowledge probing accuracy:</b> We plot hits@1 against $P_{pretrain}(obj|subj)$, the conditional probability of the gold object given a subject, on the test set in the <i>remove stopwords</i> setting. In both (left) zero-shot and (right) finetuned settings, we observe a strong correlation: <b>hits@1 is lower as the co-occurrence count is lower</b>. As a result, <b>LLMs struggle to recall rare facts</b>. We observe that such <b>correlation remains despite scaling up model sizes or finetuning</b>.
 </div>
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -121,9 +121,12 @@ We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> 
     </div>
 </div>
 <div class="caption_left">
-    <b>Correlational analysis of larger models:</b> We test GPT-3.5 175B and ChatGPT on the subset of test data in the <i>remove stopwords</i> setting, verifying that correlation remains despite scaling up model sizes.
+    <b>Correlational analysis of larger models:</b> We test <b>larger models (GPT-3.5 175B and ChatGPT)</b> on the subset of test data in the <i>remove stopwords</i> setting, verifying that correlation remains despite scaling up model sizes.
 </div>
 
 ## Conclusion
 
-- LLMs are vulnerable to the co-occurrence bias, defined as preferring frequently co-occurred words over the correct answer.
+- LLMs are vulnerable to the **co-occurrence bias, defined as preferring frequently co-occurred words over the correct answer**.
+- Consequently, **LLMs struggle to recall facts whose subject and object rarely co-occur** in the pre-training dataset.
+- Co-occurrence bias remains **despite scaling up model sizes or finetuning**.
+- Therefore, we **suggest further investigation on mitigating co-occurrence bias to ensure the reliability of language models** by preventing potential harms.
