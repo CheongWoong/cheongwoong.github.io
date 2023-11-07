@@ -123,6 +123,14 @@ We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> 
 <div class="caption_left">
     <b>Correlational analysis of larger models:</b> We test <b>larger models (GPT-3.5 175B and ChatGPT)</b> on the subset of test data in the <i>remove stopwords</i> setting, verifying that correlation remains despite scaling up model sizes.
 </div>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-3 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/impact_of_cooccurrence/count_biased_cases.png" title="count biased cases" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption_left">
+    The quantitative failure analysis of GPT-J 6B, <b>counting biased cases, in which the correct answer is overridden by a word with higher co-occurrence</b>. The ratio of biased cases to the total failure cases is reported. We observe that a word with higher co-occurrence is preferred over the correct answer in a total of 38% of the failure cases. The results of different frequency bins show that the <b>co-occurrence bias is more problematic when recalling rare facts</b>.
+</div>
 
 ## Conclusion
 
