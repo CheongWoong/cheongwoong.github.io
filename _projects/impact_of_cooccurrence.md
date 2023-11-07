@@ -21,7 +21,7 @@ bibliography: custom.bib
 date: 2023-10-31
 ---
 
-This is the project page for the paper "[Impact of Co-occurrence on Factual Knowledge of Large Language Models](https://arxiv.org/abs/2310.08256)". The code can be found [here](https://github.com/CheongWoong/impact_of_cooccurrence).
+This is the project page for the paper "[Impact of Co-occurrence on Factual Knowledge of Large Language Models](https://arxiv.org/abs/2310.08256)". You may refer to the additional materials, including the [code](https://github.com/CheongWoong/impact_of_cooccurrence), [poster](assets/pdf/impact_of_cooccurrence/poster.pdf) and [slides](assets/pdf/impact_of_cooccurrence/slides.pdf).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
