@@ -124,7 +124,7 @@ We test open-source versions of GPT-3 <d-cite key="brown2020language"></d-cite> 
     <b>Correlational analysis of larger models:</b> We test <b>larger models (GPT-3.5 175B and ChatGPT)</b> on the subset of test data in the <i>remove stopwords</i> setting, verifying that correlation remains despite scaling up model sizes.
 </div>
 <div class="row justify-content-sm-center">
-    <div class="col-sm-3 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.html path="assets/img/impact_of_cooccurrence/count_biased_cases.png" title="count biased cases" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
