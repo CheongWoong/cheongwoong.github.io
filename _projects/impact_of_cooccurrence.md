@@ -39,7 +39,7 @@ Large language models (LLMs) often make factually incorrect responses despite th
 **The LAMA Probe**
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/impact_of_cooccurrence/factual_knowledge_probing_procedure.png" title="factual knowledge probing procedure" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -49,7 +49,7 @@ We adopt the LAMA-TREx dataset <d-cite key="elsahar2018t,petroni2019language"></
 **Metrics**
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/impact_of_cooccurrence/factual_knowledge_probing_metrics.png" title="factual knowledge probing metrics" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -59,7 +59,7 @@ Following the knowledge base completion literature <d-cite key="bordes2011learni
 **Restricted Candidate Sets**
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/impact_of_cooccurrence/restricted_candidate_sets_remove_stopwords.png" title="restricted candidate sets remove stopwords" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -73,7 +73,7 @@ Since **LLMs are not trained to act as knowledge bases**, we use **restricted ou
 **Co-occurrence Statistics**
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/impact_of_cooccurrence/cooccurrence_counting_pipeline.png" title="cooccurrence counting pipeline" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
