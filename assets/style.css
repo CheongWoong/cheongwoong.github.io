@@ -1,0 +1,121 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #111;
+  max-width: 45rem; /* 720px */
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem; /* 40px 20px */
+  line-height: 1.6;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+.email {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Bio Section */
+.bio-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem; /* 20px */
+  flex-wrap: wrap;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.bio-photo img {
+  width: 10rem;   /* 160px */
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1.4rem;
+  margin-right: 1.875rem; /* 30px */
+}
+
+/* Publications */
+.pub-year {
+  font-size: 1.3rem;
+  color: #999;
+  min-width: 5rem;  /* 80px */
+  text-align: right;
+  padding-top: 0.2rem;
+  border-top: 1px solid #ddd;
+}
+
+.pub-list {
+  flex: 1;
+}
+
+.pub-item {
+  margin-bottom: 1rem;
+}
+
+.pub-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pub-venue {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.pub-links a {
+  color: #0044cc;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
